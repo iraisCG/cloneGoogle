@@ -7,6 +7,7 @@ body{
     font-size: 13px;
     /*Fuente del texto*/
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 /*Navegacion*/
@@ -74,7 +75,7 @@ main{
 
 main .main-logo{
     
-    width: 530px;
+    width: 550px;
     margin: 0 auto;
     /*Margen de abajo*/
     margin-bottom: 40px;
@@ -82,14 +83,15 @@ main .main-logo{
 }
 /*Logo de google*/
 main .main-logo img{
-    height: 180px;
+    height: 120px;
+    
 }
 
 /*sección input*/
 
 main .main-input{
     
-    width: 530px;
+    width: 550px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
@@ -99,11 +101,16 @@ main .main-input-container{
     border: 1px solid #dfe1e5;
     border-radius: 40px;
     width: 550px;
+    /**Componenetes son flexibles*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .main-input input{
+    
     height: 40px;
-    width: 480px;
+    width: 400px;
     /*Quitar el borde negro*/
     border: none;
     /*OUTLINE quitar el borde azul al hacer clck*/
@@ -111,11 +118,117 @@ main .main-input input{
 }
 
 main .main-input .search-icon{
+
     background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
     background-position: center;
     width: 15px;
+    height: 15px;
     background-size: contain;
     padding-left: 6%;
     background-repeat: no-repeat;
 
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 17px;
+    height: 18px;
+    background-position: center;
+    padding-left: 4%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 15px;
+    height: 15px;
+    padding-left: 1%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-buttons{
+    
+    width: 550px;
+    margin: 0 auto;
+    
+}
+
+main .main-buttons div{
+    /*Alinear elementos en línea*/
+    display: inline-block;
+
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 30px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 0 15px;
+
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 0 2px #20212447;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+footer .cont-footer{
+    background-color: #dfe1e588;
+   margin: 0 auto;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+
+    
+}
+
+.footer-left{
+   
+    list-style:none;
+    display: flex;
+    justify-content: left;
+    width: 80%;
+   
+    
+
+}
+
+.footer-left a{
+    margin-right: 30px;
+    /*color de texto*/
+    color: #70757a;
+    /*quitar subrayado*/
+    text-decoration: none;
+}
+
+.footer-right{
+    
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+.footer-right a{
+    margin-right: 30px;
+    /*color de texto*/
+    color:#70757a;
+    /*quitar subrayado*/
+    text-decoration: none;
 }
